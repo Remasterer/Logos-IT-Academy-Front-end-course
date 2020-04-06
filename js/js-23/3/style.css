@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #e15655;
+    color: #fff;
+}
+span,svg{
+    transform: translate(-40%,-60%);
+    position: absolute;
+}
+.progress-ring__circle{
+   transform-origin: center;
+   transform: rotate(-90deg);
+   /* transition: stroke-dashoffset 0.3s; */
+}
+
+

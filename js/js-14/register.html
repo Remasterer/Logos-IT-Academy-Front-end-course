@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="form__container">
+    <div class="form__header">
+      Create your account
+    </div>
+    <form action="#" class="register-form">
+      <p>First name</p>
+      <input type="text" name="first-name" placeholder="type here.." class="form-data">
+      <p>Second name</p>
+      <input type="text" name="first-name" placeholder="type here.." class="form-data">
+      <p>Email address</p>
+      <input type="email" name="first-name" placeholder="enter email" class="form-data">
+      
+      <div class="male__container">
+      <input type="radio" name="sex" id="sex-male">
+      <label for="sex-male" >Male</label>
+      <input type="radio" name="sex" id="sex-female" >
+      <label for="sex-female">Female</label>
+      </div>
+      <p>Position</p>
+      <select name="position" id="positions">
+        <option value="standart" class="1">Choose</option>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+        <option value="QC/QA">QC/QA</option>
+      </select>
+      <div class="terms-of-use"><input type="checkbox"  class="agree-to-terms"><p>I agree to the terms of use</p></div>
+
+      <input type="submit" class="sign-button" disabled value="Sigh up">
+    </form>
+  </div>
+  <div class="final-form">
+    <div class="final-form__header">
+
+    </div>
+    <div class="final-form__main">
+      <img src="/man.png" alt="" class="male-image">
+      <h3 class="user-name"></h3>
+      <p class="user-email"></p>
+      <p class="user-position"></p>
+      <hr>
+      <button class="sign-out">Signt out</button>
+    </div>
+    <div class="final-form__footer">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+  <script src="register.js"></script>
+  
+</body>
+</html>

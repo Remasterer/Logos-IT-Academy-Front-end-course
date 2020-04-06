@@ -1,0 +1,450 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+a{
+  color: black;
+}
+@font-face {
+  font-family: "Bahij";
+  src: url("fonts/bahij-sultannahia-webfont.woff2") format("woff2"),
+    url("fonts/bahij-sultannahia-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Chronica";
+  src: url("fonts/chronicapro-regular-webfont.woff2") format("woff2"),
+    url("fonts/chronicapro-regular-webfont.woff") format("woff");
+}
+h2{
+  font-family: "Bahij";
+}
+p{
+  font-size: 12px;
+  font-family: "Chronica";
+}
+.header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.header a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 6%;
+}
+.header a:hover{
+  color: #1e82fb;
+}
+.active__menu{
+  color: #1e82fb;
+}
+.main__container p , .section p{
+  color: #565656;
+}
+.main{
+  line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 0 auto;
+  height: 620px;
+  width: 1180px;
+  border-radius:1rem;
+  background-color: #e8eaea;
+}
+.aside{
+  border-radius:1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  height: 22rem;
+  width: 5rem;
+  background-color: #fff;
+  font-size: 2rem;
+}
+.icon__active {
+  border-radius: 1rem;
+  color: white;
+  background-color: #1e82fb;
+}
+.aside i ,.aside a{
+  z-index: 1;
+  display: flex;
+  align-items:center;
+  padding: 0.4rem;
+}
+.aside i:hover{
+  margin-left: 4.6rem;
+  border-radius: 1rem;
+  color: white;
+  background-color: #1e82fb;
+  padding-right: 5rem;
+  transition: margin-left 0.4s,
+  padding-right 0.4s;
+}
+.aside i::after{
+  display: flex;
+  justify-content: center;
+   z-index: 1;
+   position: absolute;
+   font-family:"Chronica";
+   font-size: 1rem;
+   margin-left: 3rem;
+   
+}
+.aside a:nth-child(1) i:hover::after {
+  content:'Project';
+}
+.aside a:nth-child(2) i:hover::after {
+  content: 'Account';
+}
+.aside a:nth-child(3) i:hover::after {
+  content: 'Groups';
+}
+.aside a:nth-child(4) i:hover::after {
+  content: 'Cloud';
+}
+.aside a:nth-child(5) i:hover::after {
+  content: 'Settings';
+}
+
+.main__container{
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.section{
+   z-index: 0;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  height: 7rem;
+  padding: 1rem 21rem 1rem 1rem;
+}
+.section__container{
+   display: flex;
+   justify-content:flex-start;
+   flex-direction: row;
+}
+.section p{
+  color: #565656;
+}
+.description{
+  border-radius:1rem;
+  margin-top: 2rem;
+  width: 34rem;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+.description__inner{
+  padding: 5rem 1rem;
+  border-radius:1rem;
+  margin-top: 2rem;
+  width: 34rem;
+  height: 11rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+.text__container{
+  margin-left: 1rem;
+}
+.description__inner img{
+  width: 5rem;
+  height: 5rem;
+}
+.main__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.data{
+  margin-left: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius:1rem;
+  width: 25rem;
+  background-color: #fff;
+  height: 24.6rem;
+}
+.data img{
+  height: 11rem;
+  width: 10rem;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card{
+  position: relative;
+  margin: 1rem;
+  border-radius:1rem;
+  padding: 2rem;
+  height: 15rem;
+  background-color: #fff;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: column; 
+}
+.card p{
+  font-family: "Chronica";
+  
+}
+.card img{
+  border-radius:3rem;
+  height: 5rem;
+  width: 5rem;
+}
+.card:hover {
+  color: #fff;
+  background-color:#1e82fb;
+}
+.icon{
+  display: none;
+}
+.card:hover .icon{
+  border-radius: 1rem;
+  color: #1e82fb;
+  padding: 0.7rem;
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  right:  -2.2rem;
+  top: -1.5rem;
+  font-size: 1.7rem;
+}
+.table__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table{
+ text-align: center;
+  font-family:"Chronica";
+   border-collapse: collapse;
+   border-spacing:10rem;
+   font-weight: bold;
+}
+
+td,
+th {
+  height: 5rem;
+  width: 12rem;
+}
+
+
+label {
+  display: inline;
+}
+
+.regular-checkbox {
+  display: none;
+}
+
+.regular-checkbox+label {
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 10 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+}
+
+.regular-checkbox+label:active,
+.regular-checkbox:checked+label:active {
+  
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.regular-checkbox:checked+label {
+  background-color: #1977e3;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+.regular-checkbox:checked+label:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #fff;
+  
+}
+
+
+.big-checkbox+label {
+  padding: 18px;
+  
+}
+
+.big-checkbox:checked+label:after {
+  font-size: 28px;
+
+  left: 6px;
+}
+tbody tr:hover{
+  background-color: #fff;
+}
+table i{
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+table i:hover{
+  background-color: #1e82fb;
+  color: white;
+  border: #fff;
+}
+.account__container{
+  display: flex;
+  justify-content: space-between;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 28rem;
+}
+.left{
+  margin-left: 1rem;
+  background-color: #fff;
+  border-radius:1rem;
+  height: 100%;
+  width: 35rem;
+}
+.up{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  border-radius:1rem;
+  background-color: #fff;
+  height: 5rem;
+  width: 100%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color:#fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+  
+}
+.up .text{
+  margin-right: 12rem;
+}
+.down{
+  
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #fff;
+  border-radius:1rem;
+  height: 29rem;
+  width: 100%;
+}
+.logo{
+  background-color: #fb5f5a;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.password__icon{
+   background-color: #1977e3;
+}
+.info{
+  margin-top: 1rem;
+  display: flex;
+  align-items:center;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.password__icon{
+  padding: 1rem;
+  margin-left: 2rem;
+}
+.info .text{
+  margin-right:0.5rem ;
+}
+.down form {
+  padding:  0 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+form label{
+  font-family: "Bahij";
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+form input , form textarea{
+  -webkit-box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 1);
+  outline: none;
+  margin-top: 0.5rem;
+  padding: 0.8rem 0.5rem;
+  border-radius:1rem;
+  border:1px #e8eaea solid;
+}
+form input:focus ,textarea:focus{
+  box-shadow: 0 0 0 1pt #1977e3;
+}
+.submit__password{
+  margin-top: 3rem;
+  padding: 0.7rem 2.5rem;
+  color:white;
+  align-self: flex-end;
+  background-color: #1977e3;
+}
+.pre__info{
+  margin-right: 7.5rem;
+}
+.pre__info .logo{
+  background-color: #ff823f;
+}
+.left textarea{
+  border-radius:1rem;
+  padding: 0.5rem;
+  border:2px #e8eaea solid;
+}
+.left form{
+  padding: 0 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.geo__container{
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: row;
+}
+.geo__container .submit__password {
+ margin-top: 1.4rem;
+}
+.geo__container input{
+  padding-right: 3rem;
+}

@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+a{
+  color: black;
+}
+@font-face {
+  font-family: "Bahij";
+  src: url("fonts/bahij-sultannahia-webfont.woff2") format("woff2"),
+    url("fonts/bahij-sultannahia-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Chronica";
+  src: url("fonts/chronicapro-regular-webfont.woff2") format("woff2"),
+    url("fonts/chronicapro-regular-webfont.woff") format("woff");
+}
+h2{
+  font-family: "Bahij";
+}
+p{
+  font-size: 12px;
+  font-family: "Chronica";
+}
+.header{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.header a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 4rem;
+}
+.header a:hover{
+  color: #1e82fb;
+}
+.active__menu{
+  color: #1e82fb;
+}
+.main__container p , .section p{
+  color: #565656;
+}
+.main{
+   line-height: 1.5;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 0 auto;
+  height: 620px;
+  width: 1180px;
+  border-radius:1rem;
+  background-color: #e8eaea;
+}
+.aside{
+  border-radius:1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  height: 22rem;
+  width: 5rem;
+  background-color: #fff;
+  font-size: 2rem;
+}
+.aside i{
+  padding: 0.2rem;
+}
+.icon__active{
+  border-radius: 1rem;
+  color: white;
+  background-color:#1e82fb;
+}
+.aside i:hover{
+  border-radius: 1rem;
+  color: white;
+  background-color:#1e82fb;
+}
+.main__container{
+  
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.section{
+  border-radius: 1rem;
+margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  height: 8rem;
+  padding: 1rem 21rem 1rem 1rem;
+}
+.section__container{
+   display: flex;
+   justify-content:flex-start;
+   flex-direction: row;
+}
+.section p{
+  color: #565656;
+}
+.description{
+  border-radius:1rem;
+  margin-top: 2rem;
+  width: 34rem;
+  
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+.description__inner{
+  padding: 5rem 1rem;
+  border-radius:1rem;
+  margin-top: 2rem;
+  width: 34rem;
+  height: 11rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+.text__container{
+  margin-left: 1rem;
+}
+.description__inner img{
+  width: 5rem;
+  height: 5rem;
+}
+.main__inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.data{
+  margin-left: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius:1rem;
+  width: 25rem;
+  background-color: #fff;
+  height: 24.6rem;
+}
+.data img{
+  height: 11rem;
+  width: 10rem;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 1rem;
+  border-radius:1rem;
+  padding: 2rem;
+  height: 15rem;
+  background-color: #fff;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: column; 
+}
+.card p{
+  font-family: "Chronica";
+  
+}
+.card img{
+  border-radius:3rem;
+  height: 5rem;
+  width: 5rem;
+}
+.card:hover {
+  color: #fff;
+  background-color:#1e82fb;
+}
+.table__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table{
+ text-align: center;
+  font-family:"Chronica";
+   border-collapse: collapse;
+   border-spacing:10rem;
+   font-weight: bold;
+}
+
+td,
+th {
+  height: 5rem;
+  width: 12rem;
+}
+tr:hover{
+  background-color: #fff;
+}
+table i{
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+table i:hover{
+  background-color: #1e82fb;
+  color: white;
+  border: #fff;
+}

@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body , html{
+  font-size: 16px;
+  font-family: "Marvel";
+}
+@font-face {
+  font-family: "Marvel";
+  src: url("Marvel-Regular.woff2") format("woff2"),
+    url("Marvel-Regular.woff") format("woff");
+}
+img{
+  padding: 3px;
+  background-color: #fff;
+  border: 2px solid #dcdcdc;
+  width: 100%;
+}
+hr{
+  background-color: #c91d1d;
+  height: 3px;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #eeeeee;
+  color: #c91d1d;
+}
+.main{
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  max-width: 1040px;
+  display: flex;
+  justify-content: space-around;
+}
+.hero{
+  width: 45%;
+}
+ .slider{
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: row  wrap;
+  
+}
+.slider img{
+  width: 102.6px;
+}
+.text{
+  font-size: 1rem;
+  word-spacing: 7px;
+  width: 45%;
+}

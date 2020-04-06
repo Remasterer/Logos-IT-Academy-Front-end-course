@@ -1,0 +1,2 @@
+let userLogin = prompt("Login?"),userPassword;
+(userLogin == "Ім'я") ? (userPassword = prompt("Пароль?")=="ЛОГОС")? alert("Ласкаво просимо"):alert("Вхід відмінено") : userLogin == null ? alert("Вхід відмений") : alert("Я вас не знаю");

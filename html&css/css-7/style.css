@@ -1,0 +1,204 @@
+.links__container:nth-child(1) .links__container__hover {
+  background-color: #6cd2f8;
+}
+
+.links__container:nth-child(13) .links__container__hover {
+  background-color: #ee5679;
+}
+
+.links__container:nth-child(11) .links__container__hover {
+  background-color: #263f59;
+}
+
+.links__container:nth-child(7) .links__container__hover {
+  background-color: #6ca81b;
+}
+
+.links__container:nth-child(9) .links__container__hover {
+  background-color: #e72b24;
+}
+
+.links__container:nth-child(5) .links__container__hover {
+  background-color: #0095ca;
+}
+
+.links__container:nth-child(3) .links__container__hover {
+  background-color: #376fad;
+}
+
+.header {
+  height: 25vh;
+  width: 100%;
+  margin-top: 5rem;
+  background-color: #52aaca;
+}
+
+.header .header__menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__menu .text {
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+  width: 0vw;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header .header__menu .text h3 {
+  margin: 0 2rem;
+  font-size: 2rem;
+}
+
+.header .header__menu .text p {
+  margin: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.header .header__menu .links__container {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 7vw;
+  border-right: 1px solid #525356;
+}
+
+.header .header__menu .links__container i {
+  color: #fff;
+}
+
+.header .header__menu .links__container .links__container__default {
+  font-size: 2rem;
+  -webkit-transition: margin-right 0.5s , margin-left 0.5s;
+  transition: margin-right 0.5s , margin-left 0.5s;
+}
+
+.header .header__menu .links__container .links__container__hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-left: 100%;
+  font-size: 3rem;
+  -webkit-transition: margin-left 0.5s , margin-right 0.5s;
+  transition: margin-left 0.5s , margin-right 0.5s;
+}
+
+.header .header__menu .links__container:hover {
+  overflow: hidden;
+}
+
+.header .header__menu .links__container:hover .links__container__default {
+  margin-right: 200%;
+}
+
+.header .header__menu .links__container:hover .links__container__hover {
+  z-index: 0;
+  margin-left: 0%;
+  width: 100%;
+}
+
+.header .header__menu .links__container:hover + .text {
+  width: 40vw;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-color: red;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ff7f5d;
+}
+/*# sourceMappingURL=style.css.map */

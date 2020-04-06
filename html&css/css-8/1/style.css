@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #00a5a8;
+}
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.box{
+  background-color: #fff;
+  padding: 100px 100px;
+  animation-name:rotation;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  
+}
+@keyframes rotation{
+  50%{
+    padding: 40px 40px;
+    border-radius:3rem;
+    transform:rotate(130deg);
+  }
+  100%{
+    
+    border-radius:1rem;
+    transform:rotate(360deg);
+    padding: 100px 100px;
+  }
+
+}

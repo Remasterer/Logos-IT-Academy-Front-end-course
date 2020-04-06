@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="task-manager__container">
+    <div class="task-manager__left">
+      <span class="task__title">Список завдань </span>
+      <form name="form_task_list">
+        <ul class="task-list">
+          
+
+        </ul>
+      </form>
+    </div>
+    <div class="task-manager__right">
+      <span class="task__title">Додати нове завдання </span>
+      <form name="add-task-form">
+      <input type="text" class="task-listener">
+      <button class="add-task-button" type="button">Додати</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal_null_string">
+    <div class="modal_text">
+    <strong>
+      Попередження!
+    </strong>
+    <p>Останій таск зі списку Ви не можете видалити</p>
+    
+    </div>
+
+    <div class="modal__cancel">
+      <i class="fas fa-times"></i>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

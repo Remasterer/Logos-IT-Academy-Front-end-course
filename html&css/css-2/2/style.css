@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 50rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.block{
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 20rem;
+    height: 10rem;
+    background-color: #00ffff;
+}
+.yellow{
+    background-color: #ffff00;
+}
+.block:nth-child(1){
+    border: 2px dashed #fd0202;
+}
+.block:nth-child(2){
+    border: 2px dotted #fd0202;
+}
+.block:nth-child(3){
+    border: 1rem solid transparent;
+    border-image: linear-gradient(to right, #0000ab , #0000ff);
+    border-image-slice:  1;
+    
+}
+.block:nth-child(4){
+    border-left: 1rem solid black;
+}
+

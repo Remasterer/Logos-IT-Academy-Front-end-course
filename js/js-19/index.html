@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegEx</title>
+  <link rel="stylesheet"  href="style.css">
+  <script src="jquery.js"></script>
+   <script src="jquery.maskedinput.min.js"></script>
+</head>
+<body>
+  <div class="register">
+    <h2>Please sign up</h2>
+    <form name="register_form" class="register-form">
+      <div>
+         <input type="text" class="regsiter-data" name="name" required="">
+          <label>First name</label>
+      </div>
+      <div class="showAnswer">
+        <input type="text" class="regsiter-data" name="surname" required="">
+        <label>Last name</label>
+      </div>
+      <div>
+        <input type="text" class="regsiter-data" name="email" required="">
+        <label>Email address</label>
+      </div>
+      <div>
+        <input type="text" class="regsiter-data" name="phone" required="" id="phone">
+        <label>Phone number</label>
+      </div>
+      <div>
+        <input type="text" class="regsiter-data" name="password" required="">
+        <label>Password</label>
+      </div>
+    </form>
+     <input type="button" class="regsiter-data register-button" value="Sign up">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

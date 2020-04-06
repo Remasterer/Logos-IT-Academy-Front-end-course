@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    width: 1200px;
+    margin-top: 12rem;
+}
+.register__container{
+    width: 50%;
+}
+.main-table,
+.main-register {
+    display: flex;
+    flex-direction: column;
+    
+}
+label{
+    margin-top: 2rem;
+}
+label:first-child{
+    margin-top: 0;
+}
+.register__container input {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+}
+.main-register input[type="text"] {
+    margin-top: 0.5rem;
+    border: 1px solid gray;
+    width: 90%;
+}
+.register-button,.edit-button {
+    margin-top: 0.8rem;
+    background-color: transparent;
+    border: 1px solid #239440;
+    color: #239440;
+    width: 20%;
+    transition: background-color .3s ease,color .3s ease;
+}
+.register-button:hover,
+.edit-button:hover {
+    background-color: #239440;
+    color:#fff;
+}
+.edit-button{
+    display: none;
+}
+.main-table{
+    direction: flex;
+    flex-direction: column;
+    align-items: center;
+    border-spacing: 0 0;
+}
+
+.main-table td , .main-table th {
+    padding: 2rem 0;
+    border-top: 1px solid gray;
+    text-align: left;
+    width: 120px;
+}
+.button{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.6rem;
+}
+.button_edit{
+    background-color: #ffba00;
+}
+.button_delete{
+    color: #fff;
+    background-color: #ea4540;
+}

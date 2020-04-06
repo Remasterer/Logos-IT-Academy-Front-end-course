@@ -1,0 +1,86 @@
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f4f6;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  text-align: center;
+}
+.register-form{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-form > div{
+  height: 5.5rem;
+  position: relative;
+}
+.register-form div label{
+  pointer-events: none;
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  transition: font-size .3s , top .3s;
+}
+
+.register-form div input:focus  ~ label,
+.register-form div input:valid~label {
+  font-size: 10px;
+  top:38px;
+  
+}
+
+.regsiter-data{
+  outline: none;
+  padding: 1rem;
+  height: 3rem;
+  width: 25rem;
+  margin-top: 2rem;
+  border: 1px solid #b0b0b0 ;
+  border-radius: 5px;
+}
+.regsiter-data:focus{
+  box-shadow: 0 0 0.8pt 0.5pt #007bff;
+}
+.register-button {
+  margin-left: 34%;
+  color: #fff;
+  background-color: #007bff;
+
+}
+.wrong{
+  opacity: 0;
+  margin-top: 0.2rem;
+  border-radius: 5px;
+  width: 80%;
+  padding: 0.5rem;
+  text-align: left;
+  color: #fff;
+  background-color: #e14756;
+}
+/* .register-form>div */
+.goodAnswer::after {
+  content: '\2713';
+  font-weight: 900;
+  color: #41a658;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}
+.badAnswer::after {
+  content: '\2718';
+  font-weight: 900;
+  color: #e14756;
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}

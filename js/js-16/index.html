@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="block">
+    <div class="block_text">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="block_add">
+      <h2>Choose what you want</h2>
+
+      <form name="form_add">
+        <div class="block__row">
+          <input type="radio" name="item_add" value=".block_table" class="checkers_margin">table
+          <input type="radio" name="item_add" value=".block_list" class="checkers_margin">list
+        </div>
+        <div class="block_table">
+          <div class="block__row">
+            <p>Count TR:</p> <input type="text" placeholder="Count TR" class="form-text" name="tr_count">
+          </div>
+          <div class="block__row">
+            <p>Count TD:</p> <input type="text" placeholder="Count TD" class="form-text" name="td_count">
+          </div>
+          <h3>Add style to your table</h3>
+
+          <div class="block__row">
+            <p>Width of TD:</p> <input type="text" name="td_width" class="form-text" placeholder="Width of TD">
+          </div>
+          <div class="block__row">
+            <p>Height of TD:</p> <input type="text" name="td_height" class="form-text" placeholder="Height of TD">
+          </div>
+          <div class="block__row">
+            <p>Width of border</p> <input type="text" name="border_width" class="form-text form-text_small">
+            <p>Type of border</p> <select name="border_type" class="form-text form-text_small">
+              <option value="solid">solid</option>
+              <option value="dotted">dotted</option>
+              <option value="double">double</option>
+            </select>
+            <p>Color of border</p> <select name="border_color" class="form-text form-text_small">
+              <option value="black">black</option>
+              <option value="red">red</option>
+              <option value="green">green</option>
+            </select>
+          </div>
+          <button type="button" class="button_def button_result button_table">Create table</button>
+        </div>
+
+        <div class="block_list">
+          <div class="block__row">
+            <p>Count Li:</p> <input type="text" name="li_count" class="form-text" placeholder="Count of Li:">
+          </div>
+          <div class="block__row">
+            <p>Type of marks:</p>
+            <select name="type_of_marks" class="form-text">
+              <option value="circle">circle</option>
+              <option value="square">square</option>
+              <option value="inside">inside</option>
+            </select>
+          </div>
+          <button type="button" class="button_def button_result button_list">Create table</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="button__container_center">
+    <button class="button_edit button_def" type="button">edit</button>
+    <button class="button_style button_def" type="button">style</button>
+  </div>
+  <div class="block block__work">
+    <form name="form_edit">
+      <div class="block_edit">
+        <textarea name="edit_area" cols="105" rows="11" class="area_edit"></textarea>
+        <div class="button__container_start">
+          <button class="button_add button_def" type="button">add</button>
+          <button class="button_result button_save button_def" type="button">save</button>
+        </div>
+      </div>
+      <div class="block_style">
+        <div class="block_style__left">
+          <strong>Font Size:</strong>
+          <div class="block__row">
+            <input type="radio" name="fontSize" value="12px" class="checkers_margin">12px
+            <input type="radio" name="fontSize" value="14px" class="checkers_margin">14px
+            <input type="radio" name="fontSize" value="16px" class="checkers_margin">16px
+            <input type="radio" name="fontSize" value="18px" class="checkers_margin">18px
+            <input type="radio" name="fontSize" value="20px" class="checkers_margin">20px
+          </div>
+          <strong>Font Size:</strong>
+          <div class="block__row">
+            <select name="fontFamily" class="select-font">
+              <option value="Arial,sans-serif">Arial</option>
+              <option value="Courier,sans-serif"> Courier</option>
+              <option value='"Times New Roman", Times, serif'>Times New Roman</option>
+            </select>
+          </div>
+          <strong>Colors:</strong>
+          <div class="block__row">
+            <button class="button_def button_color" type="button" name="color">Color of text</button>
+            <button class="button_def button_color" type="button" name="backgroundColor">Bckground color</button>
+          </div>
+          <strong>Style:</strong>
+          <div class="block__row">
+            <input type="checkbox" value="bold" class="checkers_margin" name="fontWeight">Bold text
+            <input type="checkbox" value="italic" class="checkers_margin" name="fontStyle">Cursive text
+          </div>
+        </div>
+        <div class="block_style__right">
+          <div class="choose-color">
+            <div class="choose_row">
+              <div class="block-choose"></div>
+              <div class="block-choose_blue block-choose"></div>
+              <div class="block-choose_green block-choose"></div>
+            </div>
+            <div class="choose_row">
+              <div class="block-choose_black block-choose"></div>
+              <div class="block-choose_orange block-choose"></div>
+              <div class="block-choose_pink block-choose"></div>
+            </div>
+            <div class="choose_row">
+              <div class="block-choose_white block-choose"></div>
+              <div class="block-choose_purple block-choose"></div>
+              <div class="block-choose_aqua block-choose"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

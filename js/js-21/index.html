@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <header>
+    <form name='adminInstruments'>
+      <div class="instruments__group">
+        <button name="saveButton" type="button">
+          <i class="fas fa-save"></i>
+        </button>
+        <button name="tableButton" type="button">
+          <i class="fas fa-table"></i>
+        </button>
+        <button name="olButton" type="button" value="Ol"><i class="fas fa-list-ol"></i></button>
+        <button name="ulButton" type="button" value="Ul"><i class="fas fa-list-ul"></i></button>
+      </div>
+    </form>
+    <form name="instruments">
+      <button type="button" disabled name="adminButton">
+        <i class="fas fa-code"></i>
+      </button>
+      <div class="instruments__group">
+        <button type="button" name="fontWeight" value="bold">
+          <i class="fas fa-bold"></i>
+        </button>
+        <button type="button" name="fontStyle" value="italic">
+          <i class="fas fa-italic"></i>
+        </button>
+        <button type="button" name="textDecoration" value="underline">
+          <i class="fas fa-underline"></i>
+        </button>
+        <button type="button" name="textDecoration" value="line-through">
+          <i class="fas fa-strikethrough"></i>
+        </button>
+      </div>
+      <div class="instruments__group">
+        <button type="button" name="textAlign" value="left">
+          <i class="fas fa-align-left"></i>
+        </button>
+        <button type="button" name="textAlign" value="center">
+          <i class="fas fa-align-center"></i>
+        </button>
+        <button type="button" name="textAlign" value="right">
+          <i class="fas fa-align-right"></i>
+        </button>
+      </div>
+      <div class="instruments__group">
+        <div class="select">
+          <i class="fas fa-font"></i>
+          <i class="fas fa-sort-up"></i>
+          <input type="checkbox" class="selector">
+          <div class="options">
+            <label>Arial<input type="checkbox" name="fontFamily"></label>
+            <label>Georgia<input type="checkbox" name="fontFamily"></label>
+            <label>Impact<input type="checkbox" name="fontFamily"></label>
+            <label>Tahoma<input type="checkbox" name="fontFamily"></label>
+            <label>Times New Roman<input type="checkbox" name="fontFamily"></label>
+            <label>Verdana <input type="checkbox" name="fontFamily"></label>
+          </div>
+        </div>
+
+        <div class="select">
+          <i class="fas fa-text-height"></i>
+          <i class="fas fa-sort-up"></i>
+          <input type="checkbox" class="selector">
+          <div class="options">
+            <label>12px<input type="checkbox" name="fontSize"></label>
+            <label>14px<input type="checkbox" name="fontSize"></label>
+            <label>16px<input type="checkbox" name="fontSize"></label>
+            <label>18px<input type="checkbox" name="fontSize"></label>
+            <label>20px<input type="checkbox" name="fontSize"></label>
+            <label>22px<input type="checkbox" name="fontSize"></label>
+            <label>30px<input type="checkbox" name="fontSize"></label>
+          </div>
+        </div>
+        <button type="button" name="color">
+          <i class="fas fa-palette"></i>
+        </button>
+        <button type="button" name='background'>
+          <i class="fas fa-image"></i>
+        </button>
+      </div>
+
+      <button type="button" name="signin">
+        <i class="fas fa-lock"></i>
+      </button>
+
+    </form>
+    <div class="modal-window">
+      <div class="modal-content">
+        <div class="modal__head">
+          <h2></h2>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="body-menu">
+          <button>Colors</button>
+          <button>Images</button>
+          <button>File</button>
+        </div>
+        <div class="modal-body">
+          <div class="colors">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="images">
+            <div class="picture-backgrounds"></div>
+            <div class="picture-backgrounds"></div>
+            <div class="picture-backgrounds"></div>
+            <div class="picture-backgrounds"></div>
+            <div class="picture-backgrounds"></div>
+            <div class="picture-backgrounds"></div>
+          </div>
+          <div class="file">
+            <label class="file-picker">
+              Choose file...
+              <input type="file" multiple>
+            </label>
+          </div>
+          <form name="LoginForm">
+            <input type="text" placeholder="Login here..." name="userLogin">
+            <input type="password" placeholder="Password here..." name="userPassword">
+            <div class="alert"></div>
+            <input type="button" value="Sign in" name='signInButton'>
+          </form>
+        </div>
+      </div>
+      <div class="sign-modal">
+        <button>Cancel</button>
+        <button>Sign out</button>
+      </div>
+      <div class="table-modal">
+        <h2>Create table</h2>
+        <hr>
+        <form class="table-modal__container" name="tableForm">
+          <div class="table-modal__left">
+            <label>Count TR</label><input type="text" name="trCount">
+            <label>Width of TD</label><input type="text" name="tdWidth">
+            <label>Width of border</label><input type="text" name="borderWidth">
+            <button type="button" name="ResetTableButton" class="reset_button">Reset</button> </div>
+            
+            <div class="table-modal__right">
+            <label>Count TD</label><input type="text" name="tdCount">
+            <label>Height of TD</label><input type="text" name="tdHeight">
+          
+            <div class="table-modal__row">
+             <label> Style of border:
+              <select name="borderStyle">
+                <option value="solid">solid</option>
+                <option value="dotted">dotted</option>
+                <option value="double">double</option>
+              </select>
+              </label>
+
+              <label>Color of border:
+                <select name="borderColor">
+                  <option value="black">black</option>
+                  <option value="red">red</option>
+                </select>
+              </label>
+           </div>
+            <button type="button" name="CreateTableButton" class="create_button">Create table</button>
+          </div>
+        </form>
+      </div>
+      <form class="list-modal" name="listForm">
+       <div class="row">
+          <h2></h2>
+          <i class="fas fa-times"></i>
+        </div>
+        <label>Count li item</label>
+        <input type="text" name="liCount">
+        <label>Type mark of list</label>
+        <select name="listStyle">
+          <option value="circle">circle</option>
+          <option value="disc">disc</option>
+          <option value="upper-roman
+">upper-roman
+</option>
+        </select>
+        <div class="row">
+          <button type="button" class="reset_button" name="resetList">Reset</button>
+          <button type="button" class="create_button" name="createList">Create list</button>
+        </div>
+      </form>
+    </div>
+  </header>
+  <main class="edit_zone" contenteditable="false">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Ensemble";
+  src: url("ensemble_solid_jnl-webfont.woff2") format("woff2"),
+    url("ensemble_solid_jnl-webfont.woff") format("woff");
+}
+.section{
+  
+  font-size: 14px;
+  display: flex;
+  height: 100vh;
+}
+.containers{
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.81);
+  font-family: "Ensemble";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  
+}
+/* color:#3f5b7c;
+color:#b16982; */
+.A{
+ background: rgb(227, 33, 55);
+ background: linear-gradient(180deg, rgba(227, 33, 55, 1) 20%, rgba(158, 40, 33, 1) 59%);
+}
+.containers:nth-child(2) {
+ background: rgb(63, 91, 124);
+ background: linear-gradient(180deg, rgba(63, 91, 124, 1) 25%, rgba(177, 105, 130, 1) 75%);
+}
+.containers:nth-child(3) {
+  background: rgb(49, 231, 189);
+  background: linear-gradient(180deg, rgba(49, 231, 189, 1) 0%, rgba(253, 130, 54, 1) 100%);
+}
+.containers:nth-child(4) {
+  background: rgb(89, 63, 55);
+  background: linear-gradient(180deg, rgba(89, 63, 55, 1) 0%, rgba(44, 118, 67, 1) 100%);
+}
+.containers:nth-child(5) {
+  background: rgb(237, 66, 100);
+  background: linear-gradient(180deg, rgba(237, 66, 100, 1) 0%, rgba(254, 235, 187, 1) 100%);
+}
+.containers:nth-child(7) {
+  background: rgb(94, 60, 28);
+  background: linear-gradient(180deg, rgba(94, 60, 28, 1) 0%, rgba(176, 156, 145, 1) 100%);
+}

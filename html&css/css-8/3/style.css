@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url("nebula.jpg") no-repeat;
+}
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.earth{
+  z-index: 1;
+  position: relative;
+  width: 500px;
+  
+}
+.moon{
+  z-index: 0;
+  left: 600px;
+  top:300px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation:rotation 3s linear infinite;
+}
+   @keyframes rotation {
+  25%{
+    left: 1100px;
+  }
+  
+  50%{
+    height: 150px;
+    width: 150px;
+    left: 600px;
+    top:700px
+  }
+  75%{
+    z-index: 2;
+    left: 100px;
+  }
+  80%{
+     z-index: 0;
+  }
+  100%{
+    transform: rotate(660deg);
+    left: 600px;
+    top:300px;
+  }
+}  

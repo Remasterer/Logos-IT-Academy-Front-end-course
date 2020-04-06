@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'a_LCDNova',arial;
+  background-color: #000011;
+  color: #087290;
+}
+button{
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  font-size: 1.1rem;
+  font-family: 'a_LCDNova',arial;
+  color: #087290;
+  border:1px solid #131d30;
+  
+  background-color: transparent;
+  transition: border-color 0.5s;
+}
+/* button:hover{
+    border:1px solid #087290;
+} */
+.block{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 30%;
+  background-color: #010215;
+  border: 1px solid #087290;
+}
+.date {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.clock{
+  font-size: 120px;
+}
+
+.block__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+.block__left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  height: 80%;
+}
+.stopwatch {
+  
+  font-size: 80px;
+}
+.block__right{
+  height: 80%;
+  width: 30%;
+   
+}
+.stopwatch__recorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  border:1px solid #131d30;
+}
+.timer__settings{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+}
+.timer-value{
+  font-size: 140px;
+}
+.regulation__buttons{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.timer-button{
+  padding: 5px 15px;
+}
