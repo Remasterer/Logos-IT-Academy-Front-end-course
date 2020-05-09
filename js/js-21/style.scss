@@ -99,7 +99,6 @@ button:disabled{
     border-radius: 5px;
 }
 .edit_zone {
-    padding: 1rem;
     color: black;
     font-size: 1rem;
     height: 90vh;
@@ -411,4 +410,8 @@ button:disabled{
 .row{
     margin-top:  1rem;
     display: flex;
+}
+
+ul,ol{
+    margin-left: 3rem;
 }

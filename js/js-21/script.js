@@ -20,9 +20,7 @@ function saveColor(event){
         if (tempProperity=='color') closeModal();
     }
 }
-function resetForm(form){
-    for(const item in form.elements) item.value='';
-}
+
 function checkForm(form){
     let check = 1;
     for (const item of form.elements) {
@@ -59,6 +57,7 @@ $('header').addEventListener('click', function(event){
                 $('.sign-modal').style.display = 'flex';
                 $('.modal-content').style.display='none';
             }
+
         }
         else{
             $('.modal__head h2').style.margin = '';
@@ -144,7 +143,11 @@ $('.sign-modal').addEventListener('click',function(event){
         closeModal();
     };
 })
-tableForm.ResetTableButton.addEventListener('click',resetForm,tableForm)
+tableForm.ResetTableButton.addEventListener('click',function(){
+    for (const item of tableForm.elements) {
+        item.value = '';
+    }
+})
 tableForm.CreateTableButton.addEventListener('click', function(){
     if(checkForm(tableForm)){
         let newTable = document.createElement('table');
@@ -168,7 +171,6 @@ tableForm.CreateTableButton.addEventListener('click', function(){
         $('.table-modal').append('Invalid value');
     }
 })
-listForm.resetList.addEventListener('click',resetForm,listForm);
 listForm.createList.addEventListener('click',function(){
     if(checkForm(listForm)){
         let newList = (listType == 'ul') ? document.createElement('ul'):document.createElement('ol');
