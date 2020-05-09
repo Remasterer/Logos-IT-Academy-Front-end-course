@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-form, .users-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  margin-top: 2rem;
+}
+
+.users-table {
+  margin-top: 4rem;
+}
+
+.login__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.login__container_input {
+  padding: 10px 15px;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.users-table {
+  border-spacing: 0 0;
+}
+
+.users-table__table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  border-top: 1px solid lightgrey;
+  padding-top: 1rem;
+}
+
+.users-table__table-row:first-child {
+  margin-top: 0;
+  padding-bottom: 1rem;
+}
+
+.table-row_cell {
+  text-align: left;
+  width: 20%;
+  padding-left: 3rem;
+}
+
+.table-row_cell:first-child {
+  width: 10px;
+  padding-left: 0rem;
+}
+
+.table-row_cell:nth-child(5) {
+  margin-left: 2rem;
+  width: 10%;
+}
+
+.table-row_cell:last-child {
+  margin-left: 2rem;
+  width: 10%;
+}
+
+.button-users {
+  padding: 10px 15px;
+  border: none;
+}
+
+.button-users_edit {
+  color: black;
+  background-color: #ffbc00;
+}
+
+.button-users_delete {
+  color: #fff;
+  background-color: #ec4642;
+}
+
+.button-login {
+  margin-top: 1rem;
+  width: 15%;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid #209444;
+  color: #209444;
+  border-radius: 5px;
+}
+
+.button-login:active {
+  background-color: #209444;
+  color: #fff;
+}
+
+[name="editButton"] {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

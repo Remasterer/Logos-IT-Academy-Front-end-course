@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link rel="stylesheet"  href="style.css">
+  
+</head>
+<body>
+  
+  <div class="container">
+    
+    <form name="registerForm" class="form_sign">
+      <h2 class="form_sign_title">Please sign up</h2>
+      <div class="form_sign__containers">
+        <input type="text" class=" form_sign_inputs" name="firstName" required="">
+        <label class="form_sign_text">First name</label>
+      </div>
+      <div class="form_sign__containers">
+        <input type="text" class="form_sign_inputs" name="secondName" required="">
+        <label class=" form_sign_text">Second name</label>
+      </div>
+      <div class="form_sign__containers">
+        <input type="email" class="form_sign_inputs" name="email" required="">
+        <label class="form_sign_text">Email</label>
+      </div>
+      <div class="form_sign__containers">
+        <input type="password" class="form_sign_inputs" name="password" required="">
+        <label   class="form_sign_text">Password</label>
+      </div>
+      <input type="button" value="Sign Up" name="registerButton" class="form_sign_inputs form_sign_button_register">
+      <a href="#" class="form_sign_link login_link">Sign In now</a>
+    </form>
+
+    <form name="loginForm" class="form_sign">
+      <h2 class="form_sign_title">Please sign in</h2>
+      <div class="form_sign__containers">
+        <input type="email" class=" form_sign_inputs" name="userEmail" required="">
+        <label class="form_sign_text">Email</label>
+      </div>
+      <div class="form_sign__containers">
+        <input type="password" class="form_sign_inputs" name="userPassword" required="">
+        <label class="form_sign_text">Password</label>
+      </div>
+      <input type="button" value="Sign In" name="loginButton" class="form_sign_inputs form_sign_button_login">
+      <a href="#" class="form_sign_link register_link" >Sign Up now</a>
+    </form>
+   
+    <div class="profile_bar">
+      <img class="profile_logo" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" alt="">
+      <h2 class="profile_name"></h2>
+      <p class="profile_email"></p>
+      <p class="profile_work">Designer & Web Developing</p>
+      <hr class="profile_line">
+      <button type="button" class="profile_button">Sign up</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

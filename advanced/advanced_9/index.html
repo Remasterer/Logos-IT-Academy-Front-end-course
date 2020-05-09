@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form name="loginForm" class="login-form">
+            <label class="login__container">
+                Login
+                <input required placeholder="Enter login" type="text" class="login__container_input" name="login"></label>
+            <label class="login__container">
+                Password
+                <input required placeholder="Enter password" type="text" class="login__container_input" name="password"></label>
+            <label class="login__container">
+                Email address
+                <input required placeholder="Enter email" type="text" class="login__container_input" name="email"></label>
+
+            <input type="button" value="Add user" class="button-login" name="loginButton">
+            <input type="button" value="Edit user" class="button-login" name="editButton">
+            </form>
+        <table class="users-table">
+            <thead class="users-table__header">
+                <tr class="users-table__table-row">
+                    <th class="table-row_cell">#</th>
+                    <th class="table-row_cell">Login</th>
+                    <th class="table-row_cell">Password</th>
+                    <th class="table-row_cell">Email</th>
+                    <th class="table-row_cell">Edit</th>
+                    <th class="table-row_cell">Delete</th>
+                </tr>
+            </thead>
+            <tbody class="users-table__body">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -138,6 +138,7 @@ button:disabled {
 }
 
 .edit_zone {
+  padding: 1rem;
   color: black;
   font-size: 1rem;
   height: 90vh;
@@ -588,9 +589,5 @@ button:disabled {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-ul, ol {
-  margin-left: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

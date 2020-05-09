@@ -1,0 +1,175 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #f5f4f6;
+}
+.container{
+  width: 50%;
+  
+}
+.form_sign{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.form_sign:nth-child(1){
+  display: none;
+}
+.form_sign_title{
+  margin-bottom: 1rem;
+}
+.form_sign__containers{
+  
+  margin-bottom: 2rem;
+  position: relative;
+}
+.form_sign_inputs{
+  outline: none;
+  width: 22rem;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid lightgrey;
+}
+.form_sign_inputs:focus{
+  box-shadow: 0px 0px 1px 1px #006cdf;
+}
+.form_sign_inputs:focus ~ .form_sign_text,
+.form_sign_inputs:valid ~ .form_sign_text{
+  font-size: 0.5rem;
+  top: 8%;
+}
+.form_sign_text{
+  
+  color: #909090;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  transition: font-size .5s , top .5s;
+  
+}
+.form_sign_button_register{
+  color: #fff;
+  background-color: #006bdd;
+}
+.form_sign_button_login{
+  color: #fff;
+  background-color: #26a041;
+}
+.form_sign_link{
+  font-size: 0.8rem;
+  color: #006bdd;
+  margin-left: -45%;
+  margin-top: .5rem;
+}
+.goodAnswer::after {
+  content: '\2713';
+  font-weight: 900;
+  color: #41a658;
+  
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+.goodAnswer{
+  border: 1px solid #41a658;
+  border-radius: 5px;
+}
+.badAnswer{
+  border: 1px solid #e14756;
+  border-radius: 5px;
+}
+.badAnswer::after {
+  content: '\2718';
+  font-weight: 900;
+  color: #e14756;
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+.badAnswer::before{
+  content: 'Invalid data';
+  bottom: -30px;
+  position: absolute;
+  padding: 5px 10px;
+  color: #fff;
+  width: 30%;
+  background-color: #e14756;
+}
+.repetedEmail{
+  border: 1px solid #e14756;
+  border-radius: 5px;
+}
+.repetedEmail::before{
+  content: 'Email exists ';
+  bottom: -30px;
+  position: absolute;
+  padding: 5px 10px;
+  color: #fff;
+  width: 30%;
+  background-color: #e14756;
+}
+.profile_bar{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.profile_logo{
+  margin-top: 2rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.profile_name{
+  margin-top: 2.5rem;
+}
+.profile_email,.profile_work{
+  margin-top: 1rem;
+  color: lightgrey;
+}
+.profile_line{
+  margin-top: 1rem;
+  width: 20%;
+  /* color: black; */
+  border: 1px solid lightgrey;
+}
+.profile_button{
+  padding: 0.8rem 0;
+  margin-top: 5rem;
+  width: 100%;
+  border: none;
+  color: #fff;
+  background-color: #2da045;
+}
+.errorLogin::after{
+  content: 'Invalid data';
+  bottom: -30px;
+  position: absolute;
+  padding: 5px 10px;
+  color: #fff;
+  width: 30%;
+  background-color: #e14756;
+}
+.localstorageError::before{
+  content: 'local storage is empty';
+  bottom: -30px;
+  position: absolute;
+  padding: 5px 10px;
+  color: #fff;
+  width: 50%;
+
+  background-color: #e14756;
+}

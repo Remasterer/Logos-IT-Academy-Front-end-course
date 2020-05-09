@@ -1,0 +1,9 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "watch": true,
+        "target": "ES2019",
+        "outFile": "main.js"
+    },
+    "files": ["main.ts"]
+}
